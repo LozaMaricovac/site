@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width:80%;
+    margin:0 auto
+}
+
+
+body {
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:  black;
+    background-color:  #FEB885;
+}
+
+nav {
+    background-color: #FF8A33;
+    color: black;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav div img{
+    margin-right: 20px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+nav ul li{
+    margin: 0px 30px;
+}
+h2 {
+    margin-right: 350px;
+}
+
+/* Mobilni telefoni */
+@media screen and (max-width: 480px) {
+    /* Stilovi primenjeni kada je širina ekrana manja od 480 piksela */
+    
+  .container{
+        width:95% ;
+        margin: 0 auto
+    }
+    body {
+        background-color: lightblue;
+      }
+      nav div {    
+        flex-direction: column;
+        padding: 5px 5px;
+      }
+      nav>div>a>img{
+        width: 150px;
+        height: auto;;
+      }
+      
+      nav>div>ul>li{
+        font-size: 30px;
+      }
+
+      nav>div>h2{
+        display: none;
+      }
+
+    
+
+
+    }
+  /* Tableti */
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    /* Stilovi primenjeni kada je širina ekrana između 481 i 768 piksela */
+    
+    .container{
+      width: 90%;
+      margin: 0 auto;
+    }
+    
+    body {
+        background-color: blue;
+      }
+    
+      nav div{    
+        flex-direction: column;
+        padding: 5px 5px;
+      }
+      nav>div>a>img{
+        width: 170px;
+        height: auto;
+      }
+      
+    
+    
+      nav>ul>li{
+        font-size:30px;
+      }
+    
+    
+      nav>div>h2{
+        display: none;
+      }
+
+
+    
+    
+    }
+  /* Laptopovi */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Stilovi primenjeni kada je širina ekrana između 769 i 1024 piksela */
+    body {
+        background-color: lightcoral;
+
+      }
+  }
+  /* Desktop računari */
+  @media screen and (min-width: 1025px) {
+    /* Stilovi primenjeni kada je širina ekrana veća od 1025 piksela */
+    body {
+        background-color: #FEB885;
+      }
+  }
+    
+
+
+.hero{ 
+    background-color: white;
+    background-image:url("security.jpg");
+    background-size: cover;
+    background-position: center;
+    height:70vh;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+.hero h1{
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-family: fantasy;
+    padding:10px;
+    font-weight: 400;
+    color:rgb(172, 83, 0);
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+  }
+  
+.hero p1{
+    margin:20px, 0;
+    width: 70%;
+    font-size: 1.4rem;
+    text-align: center;
+    color:white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  
+.hero button{
+    background-color:black;
+    color:rgb(172, 83, 0) ;
+    font-size: 1.1rem;
+    padding:5px 12px;
+    border-radius: 7px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    margin-top:25px;
+  }
+.hero button:hover{
+    background-color: rgb(37, 35, 35, 0.85);
+    color: rgb(214, 104, 0);
+    border-width: 2px;
+    border-color:rgba(37, 35, 35, 0.85) ;
+    border-style: solid;
+    cursor: pointer;
+    font-weight: 700;
+  }
+   
+  a{
+    text-decoration: none;
+    color: black (255, 255, 255);
+  }
+  a:hover{
+    color: rgb(255, 145, 0);
+    border-bottom: 2px solid black;
+  }
+
+.hero{
+    background-color: white;
+    background-size: cover;
+    background-position: top;
+    height: 80vh;
+  
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.hero-index{
+    background-image: url("security.jpg"); 
+  }
+.hero-kontakt{
+    background-image: url("kontakt.jpg"); 
+  }
+.hero-o nama{
+    background-image: url("o\ nama.jpg"); 
+  }
+.hero-usluge{
+    background-image: url("usluge.jpg"); 
+  }
+    
